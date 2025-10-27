@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradokumenty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0e0e0d 0%, #1a1a18 100%);
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #02c6d1;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .finder-btn {
+      background: #02c6d1;
+      border: none;
+      border-radius: 10px;
+      color: #0e0e0d;
+      font-weight: bold;
+      padding: 15px 30px;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .finder-btn:hover {
+      background: #03d9e5;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .finder-btn {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Wybierz paradokument</h1>
+
+  <div class="button-container">
+    <a href="ukrytafinder.html" class="finder-btn">Ukryta Prawda</a>
+    <a href="szpitalfinder.html" class="finder-btn">Szpital</a>
+  </div>
+
+</body>
+</html>
